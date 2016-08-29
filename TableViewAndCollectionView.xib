@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableViewAndCollectionView">
+            <connections>
+                <outlet property="tableView" destination="YSb-UE-wiM" id="x7G-V9-toG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSb-UE-wiM">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="318" id="Hcv-H8-YTD">
+                            <variation key="widthClass=compact" constant="213"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="30" id="VDm-u3-O6e"/>
+                    </constraints>
+                    <state key="normal" title="TableView滚动视觉差效果"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Hcv-H8-YTD"/>
+                            <exclude reference="VDm-u3-O6e"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Hcv-H8-YTD"/>
+                            <include reference="VDm-u3-O6e"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="tableViewBtnClicked:" destination="-1" eventType="touchUpInside" id="odr-Pf-JjB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YSb-UE-wiM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="31" id="Jke-BX-8XR"/>
+                <constraint firstItem="YSb-UE-wiM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="69" id="vUE-hO-9E8"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="YSb-UE-wiM"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Jke-BX-8XR"/>
+                    <exclude reference="vUE-hO-9E8"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="YSb-UE-wiM"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Jke-BX-8XR"/>
+                    <include reference="vUE-hO-9E8"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="336" y="428"/>
+        </view>
+    </objects>
+</document>
