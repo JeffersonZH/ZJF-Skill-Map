@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>double.html</title>
+	<style type="text/css">
+    /* 解决拖动时选中文字 */
+    body{
+      -webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
+      user-select:none;
+	}
+  </style>
+  <meta name="content-type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="jquery-1.8.3.js"></script> 
+  <script type="text/javascript" src="svg.js"></script> 
+	<script type="text/javascript">$(function() { 
+    	initSubWayData();  
+    });
+    var subWaydata ={ 
+	    lines : {}, 
+	    stations: {}, 
+	    icons: {} 
+    }; 
+    //加载json
+    function initSubWayData(){ 
+		var dataroot="double.json"; 
+		$.getJSON(dataroot, function(data){ 
+			subWaydata.lines=data.root.lines; 
+			subWaydata.stations=data.root.stations; 
+			subWaydata.icons=data.root.icons;
+			//alert(subWaydata.lines.line[0].code);
+			for(var i=0;i<subWaydata.lines.line.length;i++){
+				drawLine(subWaydata.lines.line[i].color,subWaydata.lines.line[i].weight,subWaydata.lines.line[i].s);
+			}
+			drawPoint(subWaydata.stations.s);
+			drawText(subWaydata.stations.s);
+			drawImage(subWaydata.icons.icon);
+			drawLineText(subWaydata.icons.label);
+			//获取当前点击的对象
+			    $('circle').mouseover(
+			        function(){
+			        	if($(this).attr("type")=='station'){
+			        		$(this).attr("r",25);
+			        	}else{
+			        		$(this).attr("r",35);
+			        	}
+			        });
+		        $('circle').mouseout(
+		        function(){
+		       			if($(this).attr("type")=='station'){
+			        		$(this).attr("r",15);
+			        	}else{
+			        		$(this).attr("r",25);
+			        	}
+		        });
+		        $('circle').click(
+		        function(){
+		            alert($(this).attr("cx")+" "+$(this).attr("cy"));
+		        });
+			});
+	} 
+	</script>
+  </head>
+  
+<body scroll="no" onload="initialize();">
+  <div style=" margin-bottom: 8px;">
+    <button type="button" onclick="zoom('zoomIn');">Zoom In</button>
+    <button type="button" onclick="zoom('zoomOut');">Zoom Out</button>
+    <button type="button" onclick="addpath();">addpath</button>
+    <text id="currentZoomFactorText" x="50%" y="100" style="text-anchor: middle; font-size: 12pt; font-weight: normal;">
+      Current svg element zoom factor = 1.000
+    </text>
+  </div>
+  <svg id="svgElement" xmlns="http://www.w3.org/2000/svg"  version="1.1" width="1300px" height="550px" viewBox="0,0,4500,3000">
+	 <g id="a">
+	 </g>
+  </svg>
+</body>
+</html>

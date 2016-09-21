@@ -12,8 +12,8 @@
 #import "EncryptAndDecryptViewController.h"
 #import "FileOperationViewController.h"
 #import "TableViewAndCollectionView.h"
-
 #import "GCDViewController.h"
+#import "TestViewController.h"
 
 @interface FirstViewController () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -27,6 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    
+    
     self.titleMessage = @"11";
     
     firstTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
@@ -73,6 +75,9 @@
     else if (indexPath.row == 5) {
         cell.textLabel.text = @"GCD多线程";
     }
+    else if (indexPath.row == 6) {
+        cell.textLabel.text = @"UIWebView加载各类文件数据";
+    }
     else
         cell.textLabel.text = @"....";
     return cell;
@@ -108,6 +113,12 @@
         [self.navigationController pushViewController:GCDView animated:YES];
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
     }
+    if (indexPath.row == 6) {
+        TestViewController * test = [[TestViewController alloc] init];
+        [self.navigationController pushViewController:test animated:YES];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
+    
 }
 
 
@@ -116,14 +127,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
 
 @end

@@ -27,6 +27,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //改变状态栏颜色
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackTranslucent;
+
     //向微信注册
     [WXApi registerApp:@"wxb4ba3c02aa476ea1" withDescription:@"weixin demo"];
 

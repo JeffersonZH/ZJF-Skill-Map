@@ -101,6 +101,17 @@
 		2CBBD6181D264BB100FAC25E /* SkillMapZJFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBD6171D264BB100FAC25E /* SkillMapZJFTests.m */; };
 		2CBBD6231D264BB100FAC25E /* SkillMapZJFUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBD6221D264BB100FAC25E /* SkillMapZJFUITests.m */; };
 		2CC2425F1D4F740000F950C1 /* timg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC2425E1D4F740000F950C1 /* timg.jpg */; };
+		4979FBBB1D92625300F8276D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4979FBBA1D92625300F8276D /* WebViewController.m */; };
+		4979FBC41D927AF200F8276D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4979FBC21D927AF200F8276D /* TestViewController.m */; };
+		4979FBC51D927AF200F8276D /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4979FBC31D927AF200F8276D /* TestViewController.xib */; };
+		4979FBD01D9285C700F8276D /* double.html in Resources */ = {isa = PBXBuildFile; fileRef = 4979FBC91D9285C700F8276D /* double.html */; };
+		4979FBD11D9285C700F8276D /* double.json in Resources */ = {isa = PBXBuildFile; fileRef = 4979FBCA1D9285C700F8276D /* double.json */; };
+		4979FBD21D9285C700F8276D /* jquery-1.8.3.js in Resources */ = {isa = PBXBuildFile; fileRef = 4979FBCB1D9285C700F8276D /* jquery-1.8.3.js */; };
+		4979FBD31D9285C700F8276D /* resource in Resources */ = {isa = PBXBuildFile; fileRef = 4979FBCC1D9285C700F8276D /* resource */; };
+		4979FBD41D9285C700F8276D /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 4979FBCD1D9285C700F8276D /* response.json */; };
+		4979FBD51D9285C700F8276D /* single.json in Resources */ = {isa = PBXBuildFile; fileRef = 4979FBCE1D9285C700F8276D /* single.json */; };
+		4979FBD61D9285C700F8276D /* svg.js in Resources */ = {isa = PBXBuildFile; fileRef = 4979FBCF1D9285C700F8276D /* svg.js */; };
+		4979FBD91D9289DB00F8276D /* LocalFile.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4979FBD81D9289DB00F8276D /* LocalFile.txt */; };
 		A1BB66AC1D3DD4E3006B50A8 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BB66AB1D3DD4E3006B50A8 /* libsqlite3.0.tbd */; };
 		A1ED0D651D376A18001E18BE /* TableViewAndCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1ED0D631D376A18001E18BE /* TableViewAndCollectionView.m */; };
 		A1ED0D661D376A18001E18BE /* TableViewAndCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1ED0D641D376A18001E18BE /* TableViewAndCollectionView.xib */; };
@@ -304,6 +315,19 @@
 		2CBBD6221D264BB100FAC25E /* SkillMapZJFUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkillMapZJFUITests.m; sourceTree = "<group>"; };
 		2CBBD6241D264BB100FAC25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC2425E1D4F740000F950C1 /* timg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpg; sourceTree = "<group>"; };
+		4979FBB91D92625300F8276D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		4979FBBA1D92625300F8276D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		4979FBC11D927AF200F8276D /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		4979FBC21D927AF200F8276D /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		4979FBC31D927AF200F8276D /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		4979FBC91D9285C700F8276D /* double.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = double.html; sourceTree = "<group>"; };
+		4979FBCA1D9285C700F8276D /* double.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = double.json; sourceTree = "<group>"; };
+		4979FBCB1D9285C700F8276D /* jquery-1.8.3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.8.3.js"; sourceTree = "<group>"; };
+		4979FBCC1D9285C700F8276D /* resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resource; sourceTree = "<group>"; };
+		4979FBCD1D9285C700F8276D /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
+		4979FBCE1D9285C700F8276D /* single.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = single.json; sourceTree = "<group>"; };
+		4979FBCF1D9285C700F8276D /* svg.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = svg.js; sourceTree = "<group>"; };
+		4979FBD81D9289DB00F8276D /* LocalFile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LocalFile.txt; sourceTree = "<group>"; };
 		A1BB66AB1D3DD4E3006B50A8 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		A1ED0D621D376A18001E18BE /* TableViewAndCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewAndCollectionView.h; path = ../TableViewAndCollectionView.h; sourceTree = "<group>"; };
 		A1ED0D631D376A18001E18BE /* TableViewAndCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewAndCollectionView.m; path = ../TableViewAndCollectionView.m; sourceTree = "<group>"; };
@@ -744,6 +768,34 @@
 			path = SkillMapZJFUITests;
 			sourceTree = "<group>";
 		};
+		4979FBB31D925CC400F8276D /* UIWebView */ = {
+			isa = PBXGroup;
+			children = (
+				4979FBD71D92861000F8276D /* HtmlFiles */,
+				4979FBC11D927AF200F8276D /* TestViewController.h */,
+				4979FBC21D927AF200F8276D /* TestViewController.m */,
+				4979FBC31D927AF200F8276D /* TestViewController.xib */,
+				4979FBB91D92625300F8276D /* WebViewController.h */,
+				4979FBBA1D92625300F8276D /* WebViewController.m */,
+			);
+			name = UIWebView;
+			sourceTree = "<group>";
+		};
+		4979FBD71D92861000F8276D /* HtmlFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4979FBCC1D9285C700F8276D /* resource */,
+				4979FBC91D9285C700F8276D /* double.html */,
+				4979FBCA1D9285C700F8276D /* double.json */,
+				4979FBCB1D9285C700F8276D /* jquery-1.8.3.js */,
+				4979FBCD1D9285C700F8276D /* response.json */,
+				4979FBCE1D9285C700F8276D /* single.json */,
+				4979FBCF1D9285C700F8276D /* svg.js */,
+				4979FBD81D9289DB00F8276D /* LocalFile.txt */,
+			);
+			name = HtmlFiles;
+			sourceTree = "<group>";
+		};
 		A1ED0D721D377312001E18BE /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -771,14 +823,15 @@
 				2C03419D1D26502300AFB216 /* FirstViewController.h */,
 				2C03419E1D26502300AFB216 /* FirstViewController.m */,
 				2C03419F1D26502300AFB216 /* FirstViewController.xib */,
+				2C0620491D4ED9EC0041A28D /* GCDViewController.h */,
+				2C06204A1D4ED9EC0041A28D /* GCDViewController.m */,
+				2C06204B1D4ED9EC0041A28D /* GCDViewController.xib */,
 				2C0341BD1D2668D500AFB216 /* Pay */,
 				2C0341BE1D2668E200AFB216 /* AudioInput */,
 				2CB8200A1D51CA0500B3423E /* Encrypt&Decrypt */,
 				A1ED0D8E1D37914D001E18BE /* FileOperation */,
 				A1ED0D8D1D379122001E18BE /* TableViewAndCollectionView */,
-				2C0620491D4ED9EC0041A28D /* GCDViewController.h */,
-				2C06204A1D4ED9EC0041A28D /* GCDViewController.m */,
-				2C06204B1D4ED9EC0041A28D /* GCDViewController.xib */,
+				4979FBB31D925CC400F8276D /* UIWebView */,
 			);
 			name = FirstPage;
 			sourceTree = "<group>";
@@ -965,17 +1018,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4979FBD61D9285C700F8276D /* svg.js in Resources */,
 				A1ED0D861D377312001E18BE /* 9.png in Resources */,
 				2CB8200F1D51CA5100B3423E /* EncryptAndDecryptViewController.xib in Resources */,
+				4979FBD01D9285C700F8276D /* double.html in Resources */,
 				A1ED0D821D377312001E18BE /* 5.png in Resources */,
 				A1ED0D7F1D377312001E18BE /* 2.png in Resources */,
+				4979FBC51D927AF200F8276D /* TestViewController.xib in Resources */,
 				A1ED0D7E1D377312001E18BE /* 10.png in Resources */,
 				2C0341E11D266C8200AFB216 /* LoginViewController.xib in Resources */,
 				2CA1B70C1D2FF27C00D201D8 /* FileOperationViewController.xib in Resources */,
 				2C0341A61D26502A00AFB216 /* SecondViewController.xib in Resources */,
 				2CA1B6E21D2FEB5500D201D8 /* Info.plist in Resources */,
+				4979FBD91D9289DB00F8276D /* LocalFile.txt in Resources */,
 				2CA1B69A1D2FE36F00D201D8 /* WeiboSDK.bundle in Resources */,
 				2C0341E71D266C8200AFB216 /* ThirdLoginViewController.xib in Resources */,
+				4979FBD51D9285C700F8276D /* single.json in Resources */,
 				A1ED0D811D377312001E18BE /* 4.png in Resources */,
 				2C0341DE1D266C8200AFB216 /* ForgetPasswordViewController.xib in Resources */,
 				2C3E4D541D3336D4006427D2 /* hi3516a.h264 in Resources */,
@@ -983,6 +1041,9 @@
 				A1ED0D701D376BE0001E18BE /* ZJFTableViewCell.xib in Resources */,
 				A1ED0D801D377312001E18BE /* 3.png in Resources */,
 				2CA1B6981D2FE36F00D201D8 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				4979FBD31D9285C700F8276D /* resource in Resources */,
+				4979FBD41D9285C700F8276D /* response.json in Resources */,
+				4979FBD21D9285C700F8276D /* jquery-1.8.3.js in Resources */,
 				A1ED0D851D377312001E18BE /* 8.png in Resources */,
 				2C0341AB1D26503000AFB216 /* ThirdViewController.xib in Resources */,
 				2C0341DC1D266C8200AFB216 /* ChangePasswordViewController.xib in Resources */,
@@ -1001,6 +1062,7 @@
 				2C0341E31D266C8200AFB216 /* RegistViewController.xib in Resources */,
 				2CA1B69D1D2FE36F00D201D8 /* ShareSDK.bundle in Resources */,
 				2C0341E51D266C8200AFB216 /* ServiceProtocalViewController.xib in Resources */,
+				4979FBD11D9285C700F8276D /* double.json in Resources */,
 				2C0341B01D26503800AFB216 /* FourthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1040,6 +1102,7 @@
 				2CA1B6E91D2FEB5500D201D8 /* NSArray+MASAdditions.m in Sources */,
 				2C0341AA1D26503000AFB216 /* ThirdViewController.m in Sources */,
 				2C0341DB1D266C8200AFB216 /* ChangePasswordViewController.m in Sources */,
+				4979FBC41D927AF200F8276D /* TestViewController.m in Sources */,
 				2CA1B6E31D2FEB5500D201D8 /* MASCompositeConstraint.m in Sources */,
 				2CA1B6EA1D2FEB5500D201D8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				2CA1B6C01D2FE8B400D201D8 /* TimerHelper.m in Sources */,
@@ -1050,6 +1113,7 @@
 				2CA1B70B1D2FF27C00D201D8 /* FileOperationViewController.m in Sources */,
 				2C0341A51D26502A00AFB216 /* SecondViewController.m in Sources */,
 				2CA1B6E41D2FEB5500D201D8 /* MASConstraint.m in Sources */,
+				4979FBBB1D92625300F8276D /* WebViewController.m in Sources */,
 				2C0341E61D266C8200AFB216 /* ThirdLoginViewController.m in Sources */,
 				2CB8200E1D51CA5100B3423E /* EncryptAndDecryptViewController.m in Sources */,
 				2C1C5A221D50994900957CD6 /* UIView+Frame.m in Sources */,
