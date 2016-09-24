@@ -55,6 +55,12 @@
     PUSHTOWEBVIEW
 }
 
+//与html页面有交互
+- (IBAction)interactionWithHtmlBtnClicked:(id)sender {
+    webViewVC.flag = @"interaction";
+    PUSHTOWEBVIEW
+}
+
 
 
 

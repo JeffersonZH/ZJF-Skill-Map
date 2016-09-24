@@ -101,6 +101,9 @@
 		2CBBD6181D264BB100FAC25E /* SkillMapZJFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBD6171D264BB100FAC25E /* SkillMapZJFTests.m */; };
 		2CBBD6231D264BB100FAC25E /* SkillMapZJFUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBD6221D264BB100FAC25E /* SkillMapZJFUITests.m */; };
 		2CC2425F1D4F740000F950C1 /* timg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2CC2425E1D4F740000F950C1 /* timg.jpg */; };
+		2CD2EFFC1D96A22F0001F15A /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CD2EFFB1D96A22F0001F15A /* demo.html */; };
+		2CD2EFFE1D96A2FD0001F15A /* demo.css in Resources */ = {isa = PBXBuildFile; fileRef = 2CD2EFFD1D96A2FD0001F15A /* demo.css */; };
+		2CD2F0001D96A3060001F15A /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 2CD2EFFF1D96A3060001F15A /* demo.js */; };
 		4979FBBB1D92625300F8276D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4979FBBA1D92625300F8276D /* WebViewController.m */; };
 		4979FBC41D927AF200F8276D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4979FBC21D927AF200F8276D /* TestViewController.m */; };
 		4979FBC51D927AF200F8276D /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4979FBC31D927AF200F8276D /* TestViewController.xib */; };
@@ -315,6 +318,9 @@
 		2CBBD6221D264BB100FAC25E /* SkillMapZJFUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkillMapZJFUITests.m; sourceTree = "<group>"; };
 		2CBBD6241D264BB100FAC25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC2425E1D4F740000F950C1 /* timg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpg; sourceTree = "<group>"; };
+		2CD2EFFB1D96A22F0001F15A /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = demo.html; path = HtmlFiles/demo.html; sourceTree = "<group>"; };
+		2CD2EFFD1D96A2FD0001F15A /* demo.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = demo.css; sourceTree = "<group>"; };
+		2CD2EFFF1D96A3060001F15A /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		4979FBB91D92625300F8276D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		4979FBBA1D92625300F8276D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		4979FBC11D927AF200F8276D /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
@@ -792,6 +798,9 @@
 				4979FBCE1D9285C700F8276D /* single.json */,
 				4979FBCF1D9285C700F8276D /* svg.js */,
 				4979FBD81D9289DB00F8276D /* LocalFile.txt */,
+				2CD2EFFB1D96A22F0001F15A /* demo.html */,
+				2CD2EFFD1D96A2FD0001F15A /* demo.css */,
+				2CD2EFFF1D96A3060001F15A /* demo.js */,
 			);
 			name = HtmlFiles;
 			sourceTree = "<group>";
@@ -1038,12 +1047,15 @@
 				2C0341DE1D266C8200AFB216 /* ForgetPasswordViewController.xib in Resources */,
 				2C3E4D541D3336D4006427D2 /* hi3516a.h264 in Resources */,
 				A1ED0D661D376A18001E18BE /* TableViewAndCollectionView.xib in Resources */,
+				2CD2F0001D96A3060001F15A /* demo.js in Resources */,
+				2CD2EFFE1D96A2FD0001F15A /* demo.css in Resources */,
 				A1ED0D701D376BE0001E18BE /* ZJFTableViewCell.xib in Resources */,
 				A1ED0D801D377312001E18BE /* 3.png in Resources */,
 				2CA1B6981D2FE36F00D201D8 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				4979FBD31D9285C700F8276D /* resource in Resources */,
 				4979FBD41D9285C700F8276D /* response.json in Resources */,
 				4979FBD21D9285C700F8276D /* jquery-1.8.3.js in Resources */,
+				2CD2EFFC1D96A22F0001F15A /* demo.html in Resources */,
 				A1ED0D851D377312001E18BE /* 8.png in Resources */,
 				2C0341AB1D26503000AFB216 /* ThirdViewController.xib in Resources */,
 				2C0341DC1D266C8200AFB216 /* ChangePasswordViewController.xib in Resources */,

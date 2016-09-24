@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset="utf-8">
+            <title>JavaScript Demo</title>
+            <style>
+                body {
+                font-size: 40px;
+                }
+                /*字体大小为20像素*/
+            </style>
+            
+            <link rel="stylesheet" type="text/css" href="demo.css">
+            <script type="text/javascript" src="demo.js"></script>
+    </head>
+    <body>
+        <!-- 在所有现代浏览器中，type不定义也可 -->
+        
+        <script type="text/javascript">
+            document.write("<h1>This is a heading</h1>");
+            document.write("<p>This is a paragraph</p>");
+            document.write("This is a\paragraph2");
+            </script>
+        
+        
+        <!--style用来设置button文字大小-->
+        <button style="width:300px;height:50px;font-size:30px;" onclick="welcome()">点击:Alert</button>
+        
+        <p id="demo">JavaScript能改变HTML元素的内容</p>
+        
+        <!--style中不设置width和height，宽度会根据文字宽度自动匹配-->
+        <button style="font-size:30px" onclick="myFunction()">点击：改变内容</button>
+        
+        <a id="a" href="http://www.qq.com">链接-腾讯</a>
+    </body>
+    
+
+</html>

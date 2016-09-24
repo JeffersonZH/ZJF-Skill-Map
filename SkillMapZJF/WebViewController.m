@@ -76,7 +76,7 @@
     }
     
     //4 以二进制数据的方式加载文件 ????
-    else {
+    else if ([_flag isEqualToString:@"asBinaryFile"]) {
         // 最最常见的一种情况
         // 打开IE,访问网站,提示你安装Flash插件
         // 如果没有这个应用程序,是无法用UIWebView打开对应的文件的
@@ -98,8 +98,26 @@
         [_webView loadData:data MIMEType:respnose.MIMEType textEncodingName:@"UTF8" baseURL:nil];
         
     }
-    
+    else {
+        //获取html文件所在路径
+        NSString * path = [[NSBundle mainBundle] bundlePath];
+        NSURL * baseURL = [NSURL fileURLWithPath:path];
+        //获取该html文件
+        NSString * htmlPath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"html"];
+        //解析该html文件
+        NSString * htmlCont = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
+        //加载html文件
+        [_webView loadHTMLString:htmlCont baseURL:baseURL];
+    }
 }
+#pragma mark-UIWebViewDelegate
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    NSURL * url = [request URL];
+    NSString * urlStr = [NSString stringWithFormat:@"%@", url];
+    NSLog(@"urlStr=%@", urlStr);
+    return YES;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

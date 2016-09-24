@@ -14,5 +14,6 @@
 - (IBAction)loadHTMLBtnClicked:(id)sender;
 - (IBAction)loadLocalFileBtnClicked:(id)sender;
 - (IBAction)loadBinaryFileBtnClicked:(id)sender;
+- (IBAction)interactionWithHtmlBtnClicked:(id)sender;
 
 @end
