@@ -100,13 +100,13 @@
     {        
       //绑定上下左右按钮
       window.addEventListener('keydown', processKeyPress, true);		// OK to let the keydown event bubble.
-      // 浏览器的鼠标滚轮滚动事件差异
+      //浏览器的鼠标滚轮滚动事件差异
       if ($.browser.mozilla) {
 	      window.addEventListener('DOMMouseScroll', zoomViaMouseWheel, false);
 	  }else{
 	  	  window.addEventListener('mousewheel', zoomViaMouseWheel, false);	
 	  }
-      // 上面定义了全局变量，根据id赋值
+      //上面定义了全局变量，根据id赋值
       theSvgElement = document.getElementById('svgElement');
       //检查你的页面支不支持SVG功能
       if(theSvgElement.namespaceURI != "http://www.w3.org/2000/svg")	
